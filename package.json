@@ -1,0 +1,29 @@
+{
+  "name": "talk-icon-fonts",
+  "version": "0.0.1",
+  "description": "Generator and packages of icon fonts belong to Talk.ai",
+  "dependencies": {},
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-consolidate": "^0.1.2",
+    "gulp-iconfont": "^5.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sketch": "^0.1.0"
+  },
+  "scripts": {},
+  "keywords": [
+    "icon",
+    "fonts",
+    "icon-fonts",
+    "talk.ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@code.teambition.com:talk/talk-icon-fonts.git"
+  },
+  "author": "Talk.ai",
+  "license": "MIT"
+}

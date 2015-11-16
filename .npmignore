@@ -1,0 +1,6 @@
+*.log
+
+/gulpfile.coffee
+/README.md
+
+/node_modules

@@ -3,4 +3,6 @@
 /gulpfile.coffee
 /README.md
 
+/lib/index.html
 /node_modules
+/src

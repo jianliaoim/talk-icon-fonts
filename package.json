@@ -2,6 +2,7 @@
   "name": "talk-icon-fonts",
   "version": "0.0.1",
   "description": "Generator and packages of icon fonts belong to Talk.ai",
+  "main": "lib/css/index.css",
   "dependencies": {},
   "devDependencies": {
     "coffee-script": "^1.10.0",
@@ -13,7 +14,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-sketch": "^0.1.0"
   },
-  "scripts": {},
+  "scripts": {
+    "prepublish": "gulp"
+  },
   "keywords": [
     "icon",
     "fonts",

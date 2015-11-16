@@ -14,7 +14,6 @@ gulp.task 'icon', (cb) ->
 
   fontName = 'talk-icon-fonts'
   template = 'template'
-  className = 'talk-icon-fonts'
 
   gulp
   .src './src/icon-fonts.sketch'
@@ -30,13 +29,13 @@ gulp.task 'icon', (cb) ->
       glyphs: glyphs.map (glyph) -> name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0)
       fontName: fontName
       fontPath: '../fonts/'
-      className: className
+      className: 'icon'
 
     # generate template css.
     gulp
     .src "./src/#{ template }.css"
     .pipe consolidate 'lodash', options
-    .pipe rename basename: fontName
+    .pipe rename basename: 'index'
     .pipe gulp.dest './lib/css/'
 
     # generate template html.
@@ -44,7 +43,7 @@ gulp.task 'icon', (cb) ->
     .src "./src/#{ template }.html"
     .pipe consolidate 'lodash', options
     .pipe rename basename: 'index'
-    .pipe gulp.dest '../'
+    .pipe gulp.dest './lib/'
 
   # generate font icons.
   .pipe gulp.dest './lib/fonts/'

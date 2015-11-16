@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "<%= fontName %>";
+  font-style: normal;
+  font-weight: normal;
+  src: url('<%= fontPath %><%= fontName %>.eot');
+  src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
+       url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg'),
+       url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
+       url('<%= fontPath %><%= fontName %>.woff') format('woff'),
+       url('<%= fontPath %><%= fontName %>.woff2') format('woff2');
+}
+
+<%= glyphs.map(function(glyph){ return '.' + className }).join(',\n') %> {
+  display: inline-block;
+  font-family: "<%= fontName %>" !important;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+<% _.each(glyphs, function(glyph) { %>.<%= className %>-<%= glyph.name %>:before { content: "\<%= glyph.codepoint.toString(16).toUpperCase() %>" }
+<% }); %>

@@ -10,7 +10,7 @@
        url('<%= fontPath %><%= fontName %>.woff2') format('woff2');
 }
 
-<%= glyphs.map(function(glyph){ return '.' + className }).join(',\n') %> {
+.<%= className %> {
   display: inline-block;
   font-family: "<%= fontName %>" !important;
   font-style: normal;

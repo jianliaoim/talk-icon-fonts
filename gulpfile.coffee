@@ -1,53 +1,142 @@
 gulp = require 'gulp'
 
+# Remove building output files before running task.
+#
+
 gulp.task 'del', (cb) ->
   del = require 'del'
 
-  del [ './lib/' ], cb
+  del [ './index.html', './lib/' ], cb
 
-gulp.task 'icon', (cb) ->
+# Generate icon fonts from sketch,
+# also export template homepage.
+#
+
+gulp.task 'icon', ->
   rename = require 'gulp-rename'
   sketch = require 'gulp-sketch'
   iconfont = require 'gulp-iconfont'
   imagemin = require 'gulp-imagemin'
   consolidate = require 'gulp-consolidate'
 
-  fontName = 'talk-icon-fonts'
+  fontName = 'talk-iconfonts'
   template = 'template'
 
   gulp
-  .src './src/icon-fonts.sketch'
-  .pipe sketch export: 'artboards', formats: 'svg'
+  .src './sketch/18px.sketch'
+  .pipe sketch
+    clean: true
+    export: 'layers'
+    compact: true
+    formats: 'svg'
+    saveForWeb: true
   .pipe imagemin()
-  .pipe iconfont fontName: fontName, formats: ['eot', 'svg', 'ttf', 'woff', 'woff2']
+  .pipe iconfont
+    formats: [ 'eot', 'svg', 'ttf', 'woff', 'woff2' ]
+    fontName: fontName
 
   # generator process.
+  #
+
   .on 'glyphs', (glyphs, options) ->
 
     # options
-    options =
-      glyphs: glyphs.map (glyph) -> name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0)
+    #
+
+    resolveGlyphs = (glyphs) ->
+
+      DEFAULT_TYPE = '未分类'
+
+      glyphTypes =
+        "#{ DEFAULT_TYPE }": []
+
+      glyphs
+      .forEach (glyph) ->
+
+        glyph.name
+        .split /\u0020|\u2002|\u2003/g
+        .forEach (nameType) ->
+
+          names = nameType.split /\u0040/g
+
+          name = names[0]
+          type = names[1] or DEFAULT_TYPE
+
+          if not glyphTypes[type]?
+            glyphTypes[type] = []
+
+          glyphTypes[type].push
+            name: name
+            unicode: glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase()
+
+      glyphTypes
+
+    info =
+      glyphTypes: resolveGlyphs glyphs
       fontName: fontName
       fontPath: '../fonts/'
-      className: 'icon'
+      className: 'ticon'
 
     # generate template css.
+    #
+
     gulp
-    .src "./src/#{ template }.css"
-    .pipe consolidate 'lodash', options
-    .pipe rename basename: 'index'
+    .src './src/template.css'
+    .pipe consolidate 'lodash', info
+    .pipe rename basename: fontName
     .pipe gulp.dest './lib/css/'
 
     # generate template html.
+    #
+
     gulp
-    .src "./src/#{ template }.html"
-    .pipe consolidate 'lodash', options
+    .src './src/template.html'
+    .pipe consolidate 'lodash', info
     .pipe rename basename: 'index'
-    .pipe gulp.dest './lib/'
+    .pipe gulp.dest './'
 
   # generate font icons.
+  #
+
   .pipe gulp.dest './lib/fonts/'
 
+# beautify css.
+#
 
-# default task to clean old files and generate icon fonts
-gulp.task 'default', ['del', 'icon']
+gulp.task 'beautify', ->
+  cssbeautify = require 'gulp-cssbeautify'
+
+  gulp
+  .src './lib/css/talk-iconfonts.css'
+  .pipe cssbeautify
+    indent: '  '
+    autosemicolon: true
+  .pipe gulp.dest './lib/css/'
+
+# compress assets.
+#
+
+gulp.task 'compress', ->
+  rename = require 'gulp-rename'
+  htmlmin = require 'gulp-htmlmin'
+  minifyCss = require 'gulp-minify-css'
+
+  gulp
+  .src './index.html'
+  .pipe htmlmin collapseWhitespace: true
+  .pipe gulp.dest './'
+
+  gulp
+  .src './lib/css/talk-iconfonts.css'
+  .pipe minifyCss()
+  .pipe rename suffix: '.min'
+  .pipe gulp.dest './lib/css/'
+
+# default task to clean old files and generate icon fonts.
+gulp.task 'default', [ 'del', 'icon' ]
+
+# build task for publishing.
+gulp.task 'build', (cb) ->
+  run = require 'run-sequence'
+
+  run 'del', 'icon', 'beautify', 'compress', cb

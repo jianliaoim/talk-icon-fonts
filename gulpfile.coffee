@@ -23,7 +23,7 @@ gulp.task 'icon', (cb) ->
 
   # generator process.
   .on 'glyphs', (glyphs, options) ->
-    console.log glyphs
+
     # options
     options =
       glyphs: glyphs.map (glyph) -> name: glyph.name, codepoint: glyph.unicode[0].charCodeAt(0)

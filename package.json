@@ -1,6 +1,6 @@
 {
   "name": "talk-iconfonts",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Iconfonts library and generator of 简聊",
   "main": "./lib/css/talk-iconfonts.css",
   "devDependencies": {

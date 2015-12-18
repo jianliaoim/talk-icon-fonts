@@ -23,10 +23,10 @@ gulp.task 'icon', ->
   template = 'template'
 
   gulp
-  .src './sketch/18px.sketch'
+  .src './sketch/16px.sketch'
   .pipe sketch
     clean: true
-    export: 'layers'
+    export: 'artboards'
     compact: true
     formats: 'svg'
     saveForWeb: true
@@ -75,7 +75,7 @@ gulp.task 'icon', ->
       glyphTypes: resolveGlyphs glyphs
       fontName: fontName
       fontPath: '../fonts/'
-      className: 'ticon'
+      className: 'ti'
 
     # generate template css.
     #

@@ -18,6 +18,7 @@
   font-weight: normal;
   text-decoration: inherit;
   text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 

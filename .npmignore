@@ -1,9 +1,8 @@
 *.log
 
 /gulpfile.coffee
-/index.html
-/README.md
 
+/example
 /node_modules
 /sketch
 /src

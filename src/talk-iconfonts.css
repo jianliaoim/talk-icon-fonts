@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "<%= fontFamily %>";
+  src: url('<%= fontPath %><%= fontName %>.eot?v=<%= version %>');
+  src: url('<%= fontPath %><%= fontName %>.eot?v=<%= version %>#iefix') format('embedded-opentype'),
+       url('<%= fontPath %><%= fontName %>.woff2?v=<%= version %>') format('woff2'),
+       url('<%= fontPath %><%= fontName %>.woff?v=<%= version %>') format('woff'),
+       url('<%= fontPath %><%= fontName %>.ttf?v=<%= version %>') format('truetype'),
+       url('<%= fontPath %><%= fontName %>.svg?v=<%= version %>#<%= fontName %>') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.<%= className %> {
+  display: inline-block;
+  font: normal normal normal 16px/1 "<%= fontFamily %>";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+<% _.each(glyphs, function(glyph) { %>
+  .<%= className %>-<%= glyph.name %>:before {
+    content: "\<%= glyph.unicode %>"
+  }
+<% }); %>

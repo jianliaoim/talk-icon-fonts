@@ -1,8 +1,7 @@
 {
   "name": "talk-iconfonts",
   "version": "0.1.7",
-  "description": "Iconfonts library and generator of 简聊",
-  "main": "./lib/css/talk-iconfonts.css",
+  "description": "Iconfonts library and generator of Talk",
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "del": "^2.2.0",
@@ -10,22 +9,28 @@
     "gulp-consolidate": "^0.1.2",
     "gulp-cssbeautify": "^0.1.3",
     "gulp-csscomb": "^3.0.6",
+    "gulp-cssnano": "^2.1.1",
     "gulp-htmlmin": "^1.3.0",
     "gulp-iconfont": "^6.0.0",
     "gulp-imagemin": "^2.4.0",
     "gulp-minify-css": "^1.2.3",
     "gulp-rename": "^1.2.2",
     "gulp-sketch": "^0.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "lodash": "^4.3.0",
+    "npm-which": "^2.0.0",
     "run-sequence": "^1.1.5"
   },
   "scripts": {
-    "build": "gulp build",
+    "build": "./node_modules/.bin/gulp build",
     "prepublish": "npm run build"
   },
   "keywords": [
     "icon",
     "fonts",
-    "icon-fonts",
+    "iconfonts",
+    "Talk",
     "简聊"
   ],
   "repository": {

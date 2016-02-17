@@ -1,6 +1,6 @@
 {
   "name": "talk-iconfonts",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Iconfonts library and generator of Talk",
   "devDependencies": {
     "coffee-script": "^1.10.0",

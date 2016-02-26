@@ -53,7 +53,7 @@ gulp.task 'iconfonts', ->
   .pipe iconfont
     formats: ['eot', 'svg', 'ttf', 'woff', 'woff2']
     fontName: FONT_NAME
-    normalize: true
+    fillRule: 'evenodd'
   # Process of generating iconfonts
   .on 'glyphs', (glyphs, options) ->
     info =

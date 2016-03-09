@@ -48,222 +48,238 @@
     content: "\EA07"
   }
 
-  .ti-brush:before {
+  .ti-bottle:before {
     content: "\EA08"
   }
 
-  .ti-case:before {
+  .ti-brush:before {
     content: "\EA09"
   }
 
-  .ti-chain:before {
+  .ti-case:before {
     content: "\EA0A"
   }
 
-  .ti-chats:before {
+  .ti-chain:before {
     content: "\EA0B"
   }
 
-  .ti-chevron-down:before {
+  .ti-chats:before {
     content: "\EA0C"
   }
 
-  .ti-chevron-left:before {
+  .ti-chevron-down:before {
     content: "\EA0D"
   }
 
-  .ti-chevron-right:before {
+  .ti-chevron-left:before {
     content: "\EA0E"
   }
 
-  .ti-chevron-up:before {
+  .ti-chevron-right:before {
     content: "\EA0F"
   }
 
-  .ti-chrome:before {
+  .ti-chevron-up:before {
     content: "\EA10"
   }
 
-  .ti-cloud-upload:before {
+  .ti-chrome:before {
     content: "\EA11"
   }
 
-  .ti-cog:before {
+  .ti-cloud-upload:before {
     content: "\EA12"
   }
 
-  .ti-computer:before {
+  .ti-cog:before {
     content: "\EA13"
   }
 
-  .ti-ellipsis:before {
+  .ti-compass:before {
     content: "\EA14"
   }
 
-  .ti-emoji:before {
+  .ti-computer:before {
     content: "\EA15"
   }
 
-  .ti-face:before {
-    content: "\EA15"
-  }
-
-  .ti-eye:before {
+  .ti-crown:before {
     content: "\EA16"
   }
 
-  .ti-horn:before {
+  .ti-ellipsis:before {
     content: "\EA17"
   }
 
-  .ti-idea:before {
+  .ti-emoji:before {
     content: "\EA18"
   }
 
-  .ti-lamp-bulb:before {
+  .ti-face:before {
     content: "\EA18"
   }
 
-  .ti-jianliao:before {
+  .ti-eye:before {
     content: "\EA19"
   }
 
-  .ti-linux:before {
+  .ti-horn:before {
     content: "\EA1A"
   }
 
-  .ti-markdown-solid:before {
+  .ti-idea:before {
     content: "\EA1B"
   }
 
-  .ti-markdown:before {
+  .ti-lamp-bulb:before {
+    content: "\EA1B"
+  }
+
+  .ti-jianliao:before {
     content: "\EA1C"
   }
 
-  .ti-member:before {
+  .ti-ladder:before {
     content: "\EA1D"
   }
 
-  .ti-menu:before {
+  .ti-linux:before {
     content: "\EA1E"
   }
 
-  .ti-mute:before {
+  .ti-markdown-solid:before {
     content: "\EA1F"
   }
 
-  .ti-open-drawer:before {
+  .ti-markdown:before {
     content: "\EA20"
   }
 
-  .ti-paperclip-lean:before {
+  .ti-member:before {
     content: "\EA21"
   }
 
-  .ti-paperclip:before {
+  .ti-menu:before {
     content: "\EA22"
   }
 
-  .ti-pencil:before {
+  .ti-mute:before {
     content: "\EA23"
   }
 
-  .ti-pin:before {
+  .ti-open-drawer:before {
     content: "\EA24"
   }
 
-  .ti-plus:before {
+  .ti-paperclip-lean:before {
     content: "\EA25"
   }
 
-  .ti-pre:before {
+  .ti-paperclip:before {
     content: "\EA26"
   }
 
-  .ti-print:before {
+  .ti-pencil:before {
     content: "\EA27"
   }
 
-  .ti-private-chat-solid:before {
+  .ti-pin:before {
     content: "\EA28"
   }
 
-  .ti-private-chat:before {
+  .ti-plus:before {
     content: "\EA29"
   }
 
-  .ti-qrcode:before {
+  .ti-pre:before {
     content: "\EA2A"
   }
 
-  .ti-redirect:before {
+  .ti-print:before {
     content: "\EA2B"
   }
 
-  .ti-refresh:before {
+  .ti-private-chat-solid:before {
     content: "\EA2C"
   }
 
-  .ti-remove:before {
+  .ti-private-chat:before {
     content: "\EA2D"
   }
 
-  .ti-rich-text:before {
+  .ti-qrcode:before {
     content: "\EA2E"
   }
 
-  .ti-roster:before {
+  .ti-redirect:before {
     content: "\EA2F"
   }
 
-  .ti-search:before {
+  .ti-refresh:before {
     content: "\EA30"
   }
 
-  .ti-shape:before {
+  .ti-remove:before {
     content: "\EA31"
   }
 
-  .ti-star:before {
+  .ti-rich-text:before {
     content: "\EA32"
   }
 
-  .ti-tag:before {
+  .ti-roster:before {
     content: "\EA33"
   }
 
-  .ti-tick:before {
+  .ti-search:before {
     content: "\EA34"
   }
 
-  .ti-trash:before {
+  .ti-shape:before {
     content: "\EA35"
   }
 
-  .ti-user:before {
+  .ti-star:before {
     content: "\EA36"
   }
 
-  .ti-users:before {
+  .ti-tag:before {
     content: "\EA37"
   }
 
-  .ti-wave:before {
+  .ti-tick:before {
     content: "\EA38"
   }
 
-  .ti-wechat:before {
+  .ti-trash:before {
     content: "\EA39"
   }
 
-  .ti-weibo:before {
+  .ti-user:before {
     content: "\EA3A"
   }
 
-  .ti-windows:before {
+  .ti-users:before {
     content: "\EA3B"
   }
 
-  .ti-zhihu:before {
+  .ti-wave:before {
     content: "\EA3C"
+  }
+
+  .ti-wechat:before {
+    content: "\EA3D"
+  }
+
+  .ti-weibo:before {
+    content: "\EA3E"
+  }
+
+  .ti-windows:before {
+    content: "\EA3F"
+  }
+
+  .ti-zhihu:before {
+    content: "\EA40"
   }

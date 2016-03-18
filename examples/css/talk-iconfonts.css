@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Talk Iconfonts";
-  src: url('../fonts/talk-iconfonts.eot?v=0.4.1');
-  src: url('../fonts/talk-iconfonts.eot?v=0.4.1#iefix') format('embedded-opentype'),
-       url('../fonts/talk-iconfonts.woff2?v=0.4.1') format('woff2'),
-       url('../fonts/talk-iconfonts.woff?v=0.4.1') format('woff'),
-       url('../fonts/talk-iconfonts.ttf?v=0.4.1') format('truetype'),
-       url('../fonts/talk-iconfonts.svg?v=0.4.1#talk-iconfonts') format('svg');
+  src: url('../fonts/talk-iconfonts.eot?v=0.4.2');
+  src: url('../fonts/talk-iconfonts.eot?v=0.4.2#iefix') format('embedded-opentype'),
+       url('../fonts/talk-iconfonts.woff2?v=0.4.2') format('woff2'),
+       url('../fonts/talk-iconfonts.woff?v=0.4.2') format('woff'),
+       url('../fonts/talk-iconfonts.ttf?v=0.4.2') format('truetype'),
+       url('../fonts/talk-iconfonts.svg?v=0.4.2#talk-iconfonts') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,478 +24,566 @@
     content: "\EA01"
   }
 
-  .ti-android:before {
+  .ti-alert-solid:before {
     content: "\EA02"
   }
 
-  .ti-apple:before {
+  .ti-alert:before {
     content: "\EA03"
   }
 
+  .ti-android:before {
+    content: "\EA04"
+  }
+
+  .ti-apple:before {
+    content: "\EA05"
+  }
+
   .ti-arrow-down-circle:before {
-    content: "\EA04"
-  }
-
-  .ti-download:before {
-    content: "\EA04"
-  }
-
-  .ti-arrow-down-circle-solid:before {
-    content: "\EA05"
-  }
-
-  .ti-download-solid:before {
-    content: "\EA05"
-  }
-
-  .ti-arrow-down:before {
     content: "\EA06"
   }
 
-  .ti-arrow-left:before {
+  .ti-download:before {
+    content: "\EA06"
+  }
+
+  .ti-arrow-down-circle-solid:before {
     content: "\EA07"
   }
 
-  .ti-arrow-right:before {
+  .ti-download-solid:before {
+    content: "\EA07"
+  }
+
+  .ti-arrow-down:before {
     content: "\EA08"
   }
 
+  .ti-arrow-left:before {
+    content: "\EA09"
+  }
+
+  .ti-arrow-right:before {
+    content: "\EA0A"
+  }
+
   .ti-arrow-up-circle:before {
-    content: "\EA09"
-  }
-
-  .ti-upload:before {
-    content: "\EA09"
-  }
-
-  .ti-arrow-up-circle-solid:before {
-    content: "\EA0A"
-  }
-
-  .ti-upload-solid:before {
-    content: "\EA0A"
-  }
-
-  .ti-arrow-up:before {
     content: "\EA0B"
   }
 
-  .ti-at:before {
+  .ti-upload:before {
+    content: "\EA0B"
+  }
+
+  .ti-arrow-up-circle-solid:before {
     content: "\EA0C"
   }
 
-  .ti-bell:before {
+  .ti-upload-solid:before {
+    content: "\EA0C"
+  }
+
+  .ti-arrow-up:before {
     content: "\EA0D"
   }
 
-  .ti-bot:before {
+  .ti-at:before {
     content: "\EA0E"
   }
 
-  .ti-bottle:before {
+  .ti-bell:before {
     content: "\EA0F"
   }
 
-  .ti-box-open:before {
+  .ti-bot:before {
     content: "\EA10"
   }
 
-  .ti-brush:before {
+  .ti-bottle:before {
     content: "\EA11"
   }
 
-  .ti-calendar:before {
+  .ti-box-open:before {
     content: "\EA12"
   }
 
-  .ti-camera:before {
+  .ti-brush:before {
     content: "\EA13"
   }
 
-  .ti-case:before {
+  .ti-calendar:before {
     content: "\EA14"
   }
 
-  .ti-chain:before {
+  .ti-camera:before {
     content: "\EA15"
   }
 
-  .ti-chats:before {
+  .ti-case:before {
     content: "\EA16"
   }
 
-  .ti-chevron-down:before {
+  .ti-chain:before {
     content: "\EA17"
   }
 
-  .ti-chevron-left:before {
+  .ti-chats:before {
     content: "\EA18"
   }
 
-  .ti-chevron-right:before {
+  .ti-chevron-down:before {
     content: "\EA19"
   }
 
-  .ti-chevron-up:before {
+  .ti-chevron-left:before {
     content: "\EA1A"
   }
 
-  .ti-chrome:before {
+  .ti-chevron-right:before {
     content: "\EA1B"
   }
 
-  .ti-cloud-upload:before {
+  .ti-chevron-up:before {
     content: "\EA1C"
   }
 
-  .ti-cog-solid:before {
+  .ti-chrome:before {
     content: "\EA1D"
   }
 
-  .ti-cog:before {
+  .ti-cloud-upload:before {
     content: "\EA1E"
   }
 
-  .ti-collection:before {
+  .ti-cog-solid:before {
     content: "\EA1F"
   }
 
-  .ti-comment:before {
+  .ti-cog:before {
     content: "\EA20"
   }
 
-  .ti-compass:before {
+  .ti-collection:before {
     content: "\EA21"
   }
 
-  .ti-computer:before {
+  .ti-comment:before {
     content: "\EA22"
   }
 
-  .ti-crown:before {
+  .ti-compass:before {
     content: "\EA23"
   }
 
-  .ti-diamond:before {
+  .ti-computer:before {
     content: "\EA24"
   }
 
-  .ti-ellipsis-vertical:before {
+  .ti-crown:before {
     content: "\EA25"
   }
 
-  .ti-ellipsis:before {
+  .ti-diamond:before {
     content: "\EA26"
   }
 
-  .ti-emoji:before {
+  .ti-edit:before {
     content: "\EA27"
   }
 
-  .ti-face:before {
-    content: "\EA27"
-  }
-
-  .ti-eye-slash:before {
+  .ti-ellipsis-vertical:before {
     content: "\EA28"
   }
 
-  .ti-eye-solid:before {
+  .ti-ellipsis:before {
     content: "\EA29"
   }
 
-  .ti-eye:before {
+  .ti-emoji:before {
     content: "\EA2A"
   }
 
-  .ti-feedback:before {
+  .ti-face:before {
+    content: "\EA2A"
+  }
+
+  .ti-eye-slash:before {
     content: "\EA2B"
   }
 
-  .ti-file-fail:before {
+  .ti-eye-solid:before {
     content: "\EA2C"
   }
 
-  .ti-home:before {
+  .ti-eye:before {
     content: "\EA2D"
   }
 
-  .ti-horn:before {
+  .ti-feedback:before {
     content: "\EA2E"
   }
 
-  .ti-idea:before {
+  .ti-file-fail:before {
     content: "\EA2F"
   }
 
-  .ti-lamp-bulb-lean:before {
-    content: "\EA2F"
-  }
-
-  .ti-image:before {
+  .ti-file:before {
     content: "\EA30"
   }
 
-  .ti-info:before {
+  .ti-files:before {
     content: "\EA31"
   }
 
-  .ti-jianliao:before {
+  .ti-forward:before {
     content: "\EA32"
   }
 
-  .ti-ladder:before {
+  .ti-share:before {
+    content: "\EA32"
+  }
+
+  .ti-heart:before {
     content: "\EA33"
   }
 
-  .ti-lamp-bulb:before {
+  .ti-like:before {
+    content: "\EA33"
+  }
+
+  .ti-heart-solid:before {
     content: "\EA34"
   }
 
-  .ti-leave:before {
+  .ti-like-solid:before {
+    content: "\EA34"
+  }
+
+  .ti-help-solid:before {
     content: "\EA35"
   }
 
-  .ti-log-out:before {
-    content: "\EA35"
-  }
-
-  .ti-life-belt:before {
+  .ti-help:before {
     content: "\EA36"
   }
 
-  .ti-linux:before {
+  .ti-home:before {
     content: "\EA37"
   }
 
-  .ti-lock-solid:before {
+  .ti-horn:before {
     content: "\EA38"
   }
 
-  .ti-lock:before {
+  .ti-idea:before {
     content: "\EA39"
   }
 
-  .ti-mail:before {
+  .ti-lamp-bulb-lean:before {
+    content: "\EA39"
+  }
+
+  .ti-image:before {
     content: "\EA3A"
   }
 
-  .ti-markdown-inverse:before {
+  .ti-info:before {
     content: "\EA3B"
   }
 
-  .ti-markdown:before {
+  .ti-jianliao:before {
     content: "\EA3C"
   }
 
-  .ti-member:before {
+  .ti-ladder:before {
     content: "\EA3D"
   }
 
-  .ti-user:before {
-    content: "\EA3D"
-  }
-
-  .ti-menu:before {
+  .ti-lamp-bulb:before {
     content: "\EA3E"
   }
 
-  .ti-mobile:before {
+  .ti-laptop:before {
     content: "\EA3F"
   }
 
-  .ti-mute:before {
+  .ti-launch-calendar:before {
     content: "\EA40"
   }
 
-  .ti-bell-slash:before {
-    content: "\EA40"
-  }
-
-  .ti-open-drawer:before {
+  .ti-launch:before {
     content: "\EA41"
   }
 
-  .ti-paperclip-lean:before {
+  .ti-leave:before {
     content: "\EA42"
   }
 
-  .ti-paperclip:before {
+  .ti-log-out:before {
+    content: "\EA42"
+  }
+
+  .ti-life-belt:before {
     content: "\EA43"
   }
 
-  .ti-pause:before {
+  .ti-linux:before {
     content: "\EA44"
   }
 
-  .ti-pencil:before {
+  .ti-lock-solid:before {
     content: "\EA45"
   }
 
-  .ti-pin:before {
+  .ti-lock:before {
     content: "\EA46"
   }
 
-  .ti-play:before {
+  .ti-loop:before {
     content: "\EA47"
   }
 
-  .ti-plus-circle-solid:before {
+  .ti-mail:before {
     content: "\EA48"
   }
 
-  .ti-plus-circle:before {
+  .ti-markdown-solid:before {
     content: "\EA49"
   }
 
-  .ti-plus:before {
+  .ti-markdown:before {
     content: "\EA4A"
   }
 
-  .ti-poop:before {
+  .ti-member:before {
     content: "\EA4B"
   }
 
-  .ti-popsicle-bitten:before {
+  .ti-user:before {
+    content: "\EA4B"
+  }
+
+  .ti-menu:before {
     content: "\EA4C"
   }
 
-  .ti-popsicle:before {
+  .ti-mobile:before {
     content: "\EA4D"
   }
 
-  .ti-pre:before {
+  .ti-mute:before {
     content: "\EA4E"
   }
 
-  .ti-print:before {
+  .ti-bell-slash:before {
+    content: "\EA4E"
+  }
+
+  .ti-open-drawer:before {
     content: "\EA4F"
   }
 
-  .ti-private-chat-solid:before {
+  .ti-paperclip-lean:before {
     content: "\EA50"
   }
 
-  .ti-private-chat:before {
+  .ti-paperclip:before {
     content: "\EA51"
   }
 
-  .ti-qrcode:before {
+  .ti-pause:before {
     content: "\EA52"
   }
 
-  .ti-redirect:before {
+  .ti-pencil:before {
     content: "\EA53"
   }
 
-  .ti-remove-circle-solid:before {
+  .ti-pin:before {
     content: "\EA54"
   }
 
-  .ti-remove-circle:before {
+  .ti-play:before {
     content: "\EA55"
   }
 
-  .ti-remove:before {
+  .ti-plus-circle-solid:before {
     content: "\EA56"
   }
 
-  .ti-rich-text:before {
+  .ti-plus-circle:before {
     content: "\EA57"
   }
 
-  .ti-roster:before {
+  .ti-plus:before {
     content: "\EA58"
   }
 
-  .ti-rotate-left:before {
+  .ti-poop:before {
     content: "\EA59"
   }
 
-  .ti-refresh:before {
-    content: "\EA59"
-  }
-
-  .ti-rotate-right:before {
+  .ti-popsicle-bitten:before {
     content: "\EA5A"
   }
 
-  .ti-search:before {
+  .ti-popsicle:before {
     content: "\EA5B"
   }
 
-  .ti-share-alt:before {
+  .ti-pre:before {
     content: "\EA5C"
   }
 
-  .ti-sharp:before {
+  .ti-print:before {
     content: "\EA5D"
   }
 
-  .ti-square:before {
+  .ti-private-chat-solid:before {
     content: "\EA5E"
   }
 
-  .ti-star:before {
+  .ti-private-chat:before {
     content: "\EA5F"
   }
 
-  .ti-tag-ellipsis:before {
+  .ti-qrcode:before {
     content: "\EA60"
   }
 
-  .ti-tag-solid:before {
+  .ti-recent:before {
     content: "\EA61"
   }
 
-  .ti-tag:before {
+  .ti-redirect-circle-solid:before {
     content: "\EA62"
   }
 
-  .ti-tick-circle-solid:before {
+  .ti-redirect-circle:before {
     content: "\EA63"
   }
 
-  .ti-tick-circle:before {
+  .ti-redirect:before {
     content: "\EA64"
   }
 
-  .ti-tick:before {
+  .ti-remove-circle-solid:before {
     content: "\EA65"
   }
 
-  .ti-trash:before {
+  .ti-remove-circle:before {
     content: "\EA66"
   }
 
-  .ti-user-add:before {
+  .ti-remove:before {
     content: "\EA67"
   }
 
-  .ti-users:before {
+  .ti-rich-text:before {
     content: "\EA68"
   }
 
-  .ti-wave:before {
+  .ti-roster:before {
     content: "\EA69"
   }
 
-  .ti-wechat:before {
+  .ti-rotate-left:before {
     content: "\EA6A"
   }
 
-  .ti-weibo:before {
+  .ti-refresh:before {
+    content: "\EA6A"
+  }
+
+  .ti-rotate-right:before {
     content: "\EA6B"
   }
 
-  .ti-windows:before {
+  .ti-search:before {
     content: "\EA6C"
   }
 
-  .ti-wrench:before {
+  .ti-share-alt:before {
     content: "\EA6D"
   }
 
-  .ti-zhihu:before {
+  .ti-sharp:before {
     content: "\EA6E"
+  }
+
+  .ti-square:before {
+    content: "\EA6F"
+  }
+
+  .ti-star-solid:before {
+    content: "\EA70"
+  }
+
+  .ti-star:before {
+    content: "\EA71"
+  }
+
+  .ti-tag-ellipsis:before {
+    content: "\EA72"
+  }
+
+  .ti-tag-solid:before {
+    content: "\EA73"
+  }
+
+  .ti-tag:before {
+    content: "\EA74"
+  }
+
+  .ti-tick-circle-solid:before {
+    content: "\EA75"
+  }
+
+  .ti-tick-circle:before {
+    content: "\EA76"
+  }
+
+  .ti-tick:before {
+    content: "\EA77"
+  }
+
+  .ti-trash:before {
+    content: "\EA78"
+  }
+
+  .ti-user-add:before {
+    content: "\EA79"
+  }
+
+  .ti-users:before {
+    content: "\EA7A"
+  }
+
+  .ti-voice:before {
+    content: "\EA7B"
+  }
+
+  .ti-wave:before {
+    content: "\EA7C"
+  }
+
+  .ti-wechat:before {
+    content: "\EA7D"
+  }
+
+  .ti-weibo:before {
+    content: "\EA7E"
+  }
+
+  .ti-windows:before {
+    content: "\EA7F"
+  }
+
+  .ti-wrench:before {
+    content: "\EA80"
+  }
+
+  .ti-zhihu:before {
+    content: "\EA81"
   }

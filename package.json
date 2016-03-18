@@ -1,6 +1,6 @@
 {
   "name": "talk-iconfonts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Iconfonts library and generator of Talk",
   "devDependencies": {
     "browser-sync": "^2.11.1",

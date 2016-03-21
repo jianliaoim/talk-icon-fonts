@@ -1,11 +1,11 @@
 @font-face {
   font-family: "Talk Iconfonts";
-  src: url('../fonts/talk-iconfonts.eot?v=1.0.0');
-  src: url('../fonts/talk-iconfonts.eot?v=1.0.0#iefix') format('embedded-opentype'),
-       url('../fonts/talk-iconfonts.woff2?v=1.0.0') format('woff2'),
-       url('../fonts/talk-iconfonts.woff?v=1.0.0') format('woff'),
-       url('../fonts/talk-iconfonts.ttf?v=1.0.0') format('truetype'),
-       url('../fonts/talk-iconfonts.svg?v=1.0.0#talk-iconfonts') format('svg');
+  src: url('../fonts/talk-iconfonts.eot?v=1.0.1');
+  src: url('../fonts/talk-iconfonts.eot?v=1.0.1#iefix') format('embedded-opentype'),
+       url('../fonts/talk-iconfonts.woff2?v=1.0.1') format('woff2'),
+       url('../fonts/talk-iconfonts.woff?v=1.0.1') format('woff'),
+       url('../fonts/talk-iconfonts.ttf?v=1.0.1') format('truetype'),
+       url('../fonts/talk-iconfonts.svg?v=1.0.1#talk-iconfonts') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -544,62 +544,66 @@
     content: "\EA75"
   }
 
-  .ti-teambition-solid:before {
+  .ti-teambition-circle-solid:before {
     content: "\EA76"
   }
 
-  .ti-teambition:before {
+  .ti-teambition-solid:before {
     content: "\EA77"
   }
 
-  .ti-tick-circle-solid:before {
+  .ti-teambition:before {
     content: "\EA78"
   }
 
-  .ti-tick-circle:before {
+  .ti-tick-circle-solid:before {
     content: "\EA79"
   }
 
-  .ti-tick:before {
+  .ti-tick-circle:before {
     content: "\EA7A"
   }
 
-  .ti-trash:before {
+  .ti-tick:before {
     content: "\EA7B"
   }
 
-  .ti-user-add:before {
+  .ti-trash:before {
     content: "\EA7C"
   }
 
-  .ti-users:before {
+  .ti-user-add:before {
     content: "\EA7D"
   }
 
-  .ti-voice:before {
+  .ti-users:before {
     content: "\EA7E"
   }
 
-  .ti-wave:before {
+  .ti-voice:before {
     content: "\EA7F"
   }
 
-  .ti-wechat:before {
+  .ti-wave:before {
     content: "\EA80"
   }
 
-  .ti-weibo:before {
+  .ti-wechat:before {
     content: "\EA81"
   }
 
-  .ti-windows:before {
+  .ti-weibo:before {
     content: "\EA82"
   }
 
-  .ti-wrench:before {
+  .ti-windows:before {
     content: "\EA83"
   }
 
-  .ti-zhihu:before {
+  .ti-wrench:before {
     content: "\EA84"
+  }
+
+  .ti-zhihu:before {
+    content: "\EA85"
   }

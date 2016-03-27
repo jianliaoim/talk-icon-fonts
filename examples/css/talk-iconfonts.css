@@ -12,8 +12,12 @@
 
 .ti {
   display: inline-block;
-  font: normal normal normal 16px/1 "Talk Iconfonts";
-  font-size: inherit;
+  font-family: "Talk Iconfonts";
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+  text-transform: none;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

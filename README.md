@@ -1,6 +1,10 @@
 Talk Iconfonts
 ===============
 
+Author
+------
+徐亮 [dribbble](https://dribbble.com/xlisok)
+
 
 Introduction
 ------------
